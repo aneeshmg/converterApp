@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg">
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:text="Distance Converter"
+      android:gravity="center"
+      android:textSize="30dp"
+      android:textColor="#ffffff"/>
+    <EditText android:id="@+id/mET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Meters"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/mB"
+        android:layout_toRightOf="@+id/mET"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+    <EditText
+        android:id="@+id/feetET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Pounds"
+        android:layout_below="@+id/mET"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/feetB"
+        android:layout_below="@+id/mB"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/feetET"
+        android:text="Convert" />
+</RelativeLayout>
